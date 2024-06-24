@@ -1,5 +1,7 @@
-import FoodContains from "../FoodContains/FoodContains"
-import Hero from "../NavBar/Hero/Hero"
+import FoodItems from "../FoodItems/FoodItems"
+import Footer from "../Footer/Footer"
+import Menus from "../Menus/Menus"
+import Hero from "../Hero/Hero"
 import { NavBar } from "../NavBar/NavBar"
 
 const Home = () => {
@@ -7,7 +9,9 @@ const Home = () => {
     <div className="container mx-auto px-6">
         <NavBar/>
         <Hero/>
-        <FoodContains/>
+        <Menus/>
+        <FoodItems/>
+        <Footer/>
     </div>
   )
 }

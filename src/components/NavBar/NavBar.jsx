@@ -1,5 +1,5 @@
-import { FaSearch } from "react-icons/fa"
 import { FaBurger } from "react-icons/fa6"
+import avatarImg from "../../../public/assets/avatar/avatar-1.jpg"
 
 export const NavBar = () => {
     return (
@@ -44,7 +44,7 @@ export const NavBar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <button className="btn"><FaSearch/></button>
+                <img className="rounded-full w-12" src={avatarImg} alt="avatar_image" />
             </div>
         </div>
     )
