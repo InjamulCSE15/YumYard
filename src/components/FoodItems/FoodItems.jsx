@@ -3,7 +3,6 @@ import toast from "react-hot-toast";
 import axios from "axios";
 import Food from "../Food/Food";
 import { TailSpin } from "react-loader-spinner";
-import { Outlet } from "react-router-dom";
 
 const FoodItems = () => {
     const [searchStr, setSearchStr] = useState('');
@@ -33,7 +32,6 @@ const FoodItems = () => {
 
     return (
         <div>
-        <Outlet />
             <div className='lg:w-6/12 mx-auto my-4'>
                 <label className="input input-bordered flex items-center gap-2">
                     <input type="text" className="grow" placeholder="Search delicious food" onChange={inputChange} />

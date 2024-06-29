@@ -3,7 +3,6 @@ import Footer from "../Footer/Footer"
 import Menus from "../Menus/Menus"
 import Hero from "../Hero/Hero"
 import { NavBar } from "../NavBar/NavBar"
-import { Outlet } from "react-router-dom"
 
 const Home = () => {
   return (
@@ -12,7 +11,6 @@ const Home = () => {
         <Hero/>
         <Menus/>
         <FoodItems/>
-        <Outlet/>
         <Footer/>
     </div>
   )
