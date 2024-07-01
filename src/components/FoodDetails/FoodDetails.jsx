@@ -18,9 +18,9 @@ const FoodDetails = () => {
   const vid = getYouTubeVideoId(strYoutube);
   return (
     <section className='container mx-auto my-8'>
-      <div className="overflow-hidden rounded-xl bg-zinc-50 grid md:grid-cols-2 gap-4">
+      <div className="overflow-hidden bg-zinc-50 grid md:grid-cols-2 gap-6">
         <div>
-          <img alt={strMeal} src={strMealThumb} className="h-[24rem] w-full object-cover transition-all duration-300 hover:scale-110" />
+          <img alt={strMeal} src={strMealThumb} className="h-[24.3rem] w-full object-cover transition-all duration-300 hover:scale-105" />
         </div>
         <div>
           <YouTubePlayer videoId={vid} />

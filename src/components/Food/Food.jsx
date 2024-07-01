@@ -14,7 +14,7 @@ const Food = ({food}) => {
                    <span>Category: {strCategory}</span> 
                    <span className="badge badge-ghost"><FaLocationDot/><span className="pl-1">{strArea}</span></span> 
                 </p>
-                <div className="card-actions justify-end">
+                <div className="">
                     <Link to={`/FoodDetails/${idMeal}`}>
                     <button className="btn w-full bg-[#713f12] text-white hover:bg-white hover:border hover:border-[#713f12] hover:text-[#713f12]">View Details</button>
                     </Link>

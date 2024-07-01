@@ -24,17 +24,22 @@ const FoodItems = () => {
             );
         }
         else {
+            setLoader(false);
             toast.error('Please search any food item');
         }
     }
 
-
+    const handleEnterKeyDown = (e) => {
+        if(e.key === 'Enter') {
+            handleSearchBtn(); 
+        }
+    }
 
     return (
         <div>
             <div className='lg:w-6/12 mx-auto my-4'>
                 <label className="input input-bordered flex items-center gap-2">
-                    <input type="text" className="grow" placeholder="Search delicious food" onChange={inputChange} />
+                    <input type="text" className="grow" placeholder="Search delicious food" onChange={inputChange} onKeyDown={handleEnterKeyDown} />
                     <svg onClick={handleSearchBtn}
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 16 16"
